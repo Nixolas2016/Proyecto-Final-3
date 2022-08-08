@@ -1,0 +1,37 @@
+header{
+    background-color: #343a40;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+    color: #000000;
+}
+
+.cuadro{
+    border-width: thin;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.nav{
+    display: flex;
+    gap: $spacing-small;
+    &-link {
+        font-size: map-get($fuentes, $text-base);
+        margin: $spacing-xsmall;
+        padding: $spacing-xsmall;
+        border: 3px solid $primary;
+        transition: all 0.5s;
+        &:hover {
+            border-color: $white;
+        }
+    }
+}
+
+.pro-link{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    transition: all 0.5s;
+    color: #000000;
+}
